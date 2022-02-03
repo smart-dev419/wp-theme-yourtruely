@@ -1,0 +1,158 @@
+@import "_variables-mixins";
+
+#home_page {
+
+	.page-header {
+		.heading_contents {
+			h6 {
+				width: 100%;
+				display: inline-block;
+				text-transform: none;
+				margin: 3em 0;
+				font-size: 1.5em;
+				line-height: 1.5;
+			}
+			.head_action {
+				display: inline-block;
+				border: 1px solid #000;
+				padding: 0.5em 5em;
+				font-size: 1.5em;
+			}
+		}
+	}
+}
+
+
+#home-main {
+	padding: 6.5em 0 10em 0;
+	.wrapper {
+		@include wrapper(1050px);
+	}
+	.content_logo {
+		text-align: center;
+	}
+	.contact_infos {
+		margin: 3em 0;
+		display: flex;
+		justify-content: center;
+		@media (max-width: 900px) {
+			flex-wrap: wrap;
+		}
+		li {
+			display: flex;
+			padding: 0 0.8em;
+			margin: 0.35em 0;
+			font-size: 1.6em;
+			text-transform: uppercase;
+			@media (max-width: 390px) {
+				padding: 0;
+			}
+			* {
+				line-height: 1;
+				letter-spacing: 0.02em;
+			}
+			span {
+				text-transform: uppercase;
+				font-family: 'SourceSansPro-Black';
+			}
+			&.address {
+				address {
+					margin: 0;
+				}
+			}
+			&.phone {
+				border-left: 1px solid #000;
+				border-right: 1px solid #000;
+				@media (max-width: 390px) {
+					border-left: none;
+					border-right: none;
+				}
+				a {
+
+				}
+			}
+			&.hours {
+				time {
+					margin: 0;
+				}
+			}
+		}
+	}
+	.content_action {
+		padding: 0 3em;
+		@media (max-width: 767px) {
+			padding: 0;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.details {
+		margin: 3.8em 0;
+	}
+	.short_about {
+		text-align: center;
+	}
+}
+
+
+.instagram_section {
+	margin: 9em 0;
+	h3 {
+		text-align: center;
+		font-family: 'SourceSansPro-Semibold';
+		margin-bottom: 1.5em;
+	}
+}
+.instagram-pics {
+	display: flex;
+	flex-wrap: wrap;
+	li {
+		width: 16.666%;	
+		padding: 0.3em;
+		@media (min-width: 500px) and (max-width: 900px) {
+			width: 25%;
+		}
+		@media (max-width: 500px) {
+			width: 50%;
+		}
+	}
+}
+
+.newest {
+	h3 {
+		text-align: center;
+		font-family: 'SourceSansPro-Semibold';
+		margin-bottom: 1.5em;
+	}
+}
+.blog_list {
+	display: flex;
+	@media (max-width: 600px) {
+		flex-wrap: wrap;
+	}
+	li {
+		width: 33.333%;
+		padding: 0 2em 5em 2em;
+		border-right: 5px solid #000;
+		@media (min-width: 600px) and (max-width: 1100px) {
+			border-right: 3px solid #000;
+		}
+		@media (max-width: 600px) {
+			width: 100%;
+			border-right: none;
+		}
+	}
+	.post_title {
+		font-family: 'SourceSansPro-Black';
+		margin: 0;
+	}
+	.post_date {
+		font-family: 'SourceSansPro-Semibold';
+		font-size: 1.25em;
+	}
+
+	.post_excerpt {
+		margin-top: 1.2em;
+	}
+}

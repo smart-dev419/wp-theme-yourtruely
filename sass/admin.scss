@@ -1,0 +1,8 @@
+@import "_variables-mixins";
+
+.acf_postbox .field {
+    textarea.textarea {
+        min-height: 52px;
+    }
+}
+    

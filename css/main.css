@@ -1,0 +1,243 @@
+/* ####################################################
+NOTE
+I am coding styles using SASS (.scss) which is then compiled using Compass into this .css
+
+This is (.scss) file for variables and mixins of Your Truely website
+
+Created by Sam Silvey
+###################################################
+*/
+@import url(../css/fonts.css);
+#wrapper {
+  position: relative;
+  font-family: 'SourceSansPro-Regular'; }
+  @media (max-width: 997px) {
+    #wrapper .row {
+      margin-left: 0;
+      margin-right: 0; } }
+  #wrapper #site-main {
+    width: 100%;
+    float: left; }
+    #wrapper #site-main > #container {
+      max-width: 1200px;
+      margin: 15em auto 10em; }
+      #wrapper #site-main > #container:before, #wrapper #site-main > #container:after {
+        content: " ";
+        display: table; }
+      #wrapper #site-main > #container:after {
+        clear: both; }
+      @media (max-width: 1230px) {
+        #wrapper #site-main > #container {
+          width: 100%;
+          float: left;
+          margin: 15em 0 10em;
+          padding: 0 1.5em; } }
+  #wrapper #site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 3.5em 0;
+    text-align: center;
+    width: 100%;
+    float: left; }
+
+/* =Header
+-------------------------------------------------------------- */
+#nav-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 2.1em 0;
+  z-index: 3; }
+  @media (max-width: 767px) {
+    #nav-fixed {
+      padding: 0; } }
+  #nav-fixed .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 930px) {
+      #nav-fixed .wrapper {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0 1.5em; } }
+
+@media (max-width: 767px) {
+  #branding {
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    z-index: 10; } }
+#branding img {
+  height: 20px; }
+
+/* =Header
+-------------------------------------------------------------- */
+/* =Menu
+-------------------------------------------------------------- */
+.menu {
+  display: flex; }
+  @media (max-width: 767px) {
+    .menu {
+      flex-wrap: wrap; } }
+  .menu .menu-item {
+    position: relative;
+    border-right: 1px solid #fff; }
+    @media (max-width: 767px) {
+      .menu .menu-item {
+        border-right: none; } }
+    .menu .menu-item a {
+      display: block;
+      font-size: 1.5em;
+      padding: 0 0.9em;
+      text-transform: capitalize;
+      line-height: 1; }
+      .menu .menu-item a:hover {
+        background: none; }
+      .menu .menu-item a:focus {
+        background-color: transparent; }
+
+#footer-menu .menu {
+  flex-wrap: nowrap; }
+
+.mean-container .mean-bar {
+  background: #000;
+  z-index: 9; }
+.mean-container .mean-nav {
+  background: #000; }
+  .mean-container .mean-nav ul li a {
+    font-size: 12px;
+    padding: 0.7em 5%; }
+.mean-container a.meanmenu-reveal {
+  width: 28px; }
+  .mean-container a.meanmenu-reveal span {
+    height: 4px;
+    margin-top: 4px; }
+
+/* =Footer
+-------------------------------------------------------------- */
+.other_elements {
+  position: absolute; }
+
+#footer_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 767px) {
+    #footer_wrapper {
+      flex-wrap: wrap; } }
+  #footer_wrapper > * {
+    margin: 0 6em; }
+    @media (max-width: 900px) {
+      #footer_wrapper > * {
+        margin: 1em 3em; } }
+
+/* =Footer
+-------------------------------------------------------------- */
+/* =Socials
+-------------------------------------------------------------- */
+.social_list {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
+  .social_list li {
+    margin: 0 1.2em; }
+    @media (max-width: 850px) {
+      .social_list li {
+        margin: 0 0.8em; } }
+    .social_list li a {
+      display: inline-block;
+      text-indent: -999em;
+      background-size: 100% 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: transparent; }
+
+.icon_facebook {
+  background-image: url(../images/social-facebook.png);
+  width: 7px;
+  height: 15px; }
+
+.icon_twitter {
+  background-image: url(../images/social-twitter.png);
+  width: 20px;
+  height: 15px; }
+
+.icon_instagram {
+  background-image: url(../images/social-instagram.png);
+  width: 15px;
+  height: 15px; }
+
+.icon_linkedin {
+  background-image: url(../images/social-linkedin.png);
+  width: 17px;
+  height: 16px; }
+
+/* =Socials End
+-------------------------------------------------------------- */
+/* =Common
+-------------------------------------------------------------- */
+.page_wrapper {
+  width: 100%;
+  float: left; }
+
+.page-header {
+  background-color: transparent;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  .page-header .heading_contents {
+    max-width: 410px; }
+    .page-header .heading_contents .head_logo {
+      width: 100%;
+      display: inline-block; }
+    .page-header .heading_contents h1 {
+      width: 100%;
+      display: inline-block;
+      margin: 1.7em 0;
+      font-size: 2.5em;
+      letter-spacing: 0.15em;
+      color: #fff;
+      font-family: 'SourceSansPro-Semibold'; }
+
+.page-main {
+  padding: 9em 0; }
+  .page-main .wrapper {
+    max-width: 1330px;
+    margin: 0 auto 0; }
+    .page-main .wrapper:before, .page-main .wrapper:after {
+      content: " ";
+      display: table; }
+    .page-main .wrapper:after {
+      clear: both; }
+    @media (max-width: 1360px) {
+      .page-main .wrapper {
+        width: 100%;
+        float: left;
+        margin: 0 0 0;
+        padding: 0 1.5em; } }
+
+/* =Common End
+-------------------------------------------------------------- */
+
+/*# sourceMappingURL=main.css.map */

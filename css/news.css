@@ -1,0 +1,61 @@
+/* ####################################################
+NOTE
+I am coding styles using SASS (.scss) which is then compiled using Compass into this .css
+
+This is (.scss) file for variables and mixins of Your Truely website
+
+Created by Sam Silvey
+###################################################
+*/
+#news_page .page-header .heading_contents h1 {
+  margin: 1.9em 0;
+  font-size: 2em;
+  letter-spacing: 0.05em; }
+
+#news-main {
+  padding: 10em 0; }
+  #news-main .wrapper {
+    max-width: 1050px;
+    margin: 0 auto 0; }
+    #news-main .wrapper:before, #news-main .wrapper:after {
+      content: " ";
+      display: table; }
+    #news-main .wrapper:after {
+      clear: both; }
+    @media (max-width: 1080px) {
+      #news-main .wrapper {
+        width: 100%;
+        float: left;
+        margin: 0 0 0;
+        padding: 0 1.5em; } }
+  #news-main h3 {
+    text-align: center;
+    font-family: 'SourceSansPro-Black';
+    margin-bottom: 2em; }
+
+.blog_list {
+  display: flex;
+  flex-wrap: wrap; }
+  .blog_list li {
+    width: 33.333%;
+    padding: 0 2em 5em 2em;
+    margin: 1.5em 0;
+    border-right: 5px solid #000; }
+    @media (min-width: 600px) and (max-width: 1100px) {
+      .blog_list li {
+        border-right: 3px solid #000; } }
+    @media (max-width: 600px) {
+      .blog_list li {
+        width: 100%;
+        border-right: none;
+        margin: 0; } }
+  .blog_list .post_title {
+    font-family: 'SourceSansPro-Black';
+    margin: 0; }
+  .blog_list .post_date {
+    font-family: 'SourceSansPro-Semibold';
+    font-size: 1.25em; }
+  .blog_list .post_excerpt {
+    margin-top: 1.2em; }
+
+/*# sourceMappingURL=news.css.map */

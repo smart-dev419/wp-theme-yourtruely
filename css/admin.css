@@ -1,0 +1,13 @@
+/* ####################################################
+NOTE
+I am coding styles using SASS (.scss) which is then compiled using Compass into this .css
+
+This is (.scss) file for variables and mixins of Your Truely website
+
+Created by Sam Silvey
+###################################################
+*/
+.acf_postbox .field textarea.textarea {
+  min-height: 52px; }
+
+/*# sourceMappingURL=admin.css.map */

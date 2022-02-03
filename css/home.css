@@ -1,0 +1,136 @@
+/* ####################################################
+NOTE
+I am coding styles using SASS (.scss) which is then compiled using Compass into this .css
+
+This is (.scss) file for variables and mixins of Your Truely website
+
+Created by Sam Silvey
+###################################################
+*/
+#home_page .page-header .heading_contents h6 {
+  width: 100%;
+  display: inline-block;
+  text-transform: none;
+  margin: 3em 0;
+  font-size: 1.5em;
+  line-height: 1.5; }
+#home_page .page-header .heading_contents .head_action {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 0.5em 5em;
+  font-size: 1.5em; }
+
+#home-main {
+  padding: 6.5em 0 10em 0; }
+  #home-main .wrapper {
+    max-width: 1050px;
+    margin: 0 auto 0; }
+    #home-main .wrapper:before, #home-main .wrapper:after {
+      content: " ";
+      display: table; }
+    #home-main .wrapper:after {
+      clear: both; }
+    @media (max-width: 1080px) {
+      #home-main .wrapper {
+        width: 100%;
+        float: left;
+        margin: 0 0 0;
+        padding: 0 1.5em; } }
+  #home-main .content_logo {
+    text-align: center; }
+  #home-main .contact_infos {
+    margin: 3em 0;
+    display: flex;
+    justify-content: center; }
+    @media (max-width: 900px) {
+      #home-main .contact_infos {
+        flex-wrap: wrap; } }
+    #home-main .contact_infos li {
+      display: flex;
+      padding: 0 0.8em;
+      margin: 0.35em 0;
+      font-size: 1.6em;
+      text-transform: uppercase; }
+      @media (max-width: 390px) {
+        #home-main .contact_infos li {
+          padding: 0; } }
+      #home-main .contact_infos li * {
+        line-height: 1;
+        letter-spacing: 0.02em; }
+      #home-main .contact_infos li span {
+        text-transform: uppercase;
+        font-family: 'SourceSansPro-Black'; }
+      #home-main .contact_infos li.address address {
+        margin: 0; }
+      #home-main .contact_infos li.phone {
+        border-left: 1px solid #000;
+        border-right: 1px solid #000; }
+        @media (max-width: 390px) {
+          #home-main .contact_infos li.phone {
+            border-left: none;
+            border-right: none; } }
+      #home-main .contact_infos li.hours time {
+        margin: 0; }
+  #home-main .content_action {
+    padding: 0 3em; }
+    @media (max-width: 767px) {
+      #home-main .content_action {
+        padding: 0; } }
+    #home-main .content_action img {
+      width: 100%; }
+  #home-main .details {
+    margin: 3.8em 0; }
+  #home-main .short_about {
+    text-align: center; }
+
+.instagram_section {
+  margin: 9em 0; }
+  .instagram_section h3 {
+    text-align: center;
+    font-family: 'SourceSansPro-Semibold';
+    margin-bottom: 1.5em; }
+
+.instagram-pics {
+  display: flex;
+  flex-wrap: wrap; }
+  .instagram-pics li {
+    width: 16.666%;
+    padding: 0.3em; }
+    @media (min-width: 500px) and (max-width: 900px) {
+      .instagram-pics li {
+        width: 25%; } }
+    @media (max-width: 500px) {
+      .instagram-pics li {
+        width: 50%; } }
+
+.newest h3 {
+  text-align: center;
+  font-family: 'SourceSansPro-Semibold';
+  margin-bottom: 1.5em; }
+
+.blog_list {
+  display: flex; }
+  @media (max-width: 600px) {
+    .blog_list {
+      flex-wrap: wrap; } }
+  .blog_list li {
+    width: 33.333%;
+    padding: 0 2em 5em 2em;
+    border-right: 5px solid #000; }
+    @media (min-width: 600px) and (max-width: 1100px) {
+      .blog_list li {
+        border-right: 3px solid #000; } }
+    @media (max-width: 600px) {
+      .blog_list li {
+        width: 100%;
+        border-right: none; } }
+  .blog_list .post_title {
+    font-family: 'SourceSansPro-Black';
+    margin: 0; }
+  .blog_list .post_date {
+    font-family: 'SourceSansPro-Semibold';
+    font-size: 1.25em; }
+  .blog_list .post_excerpt {
+    margin-top: 1.2em; }
+
+/*# sourceMappingURL=home.css.map */

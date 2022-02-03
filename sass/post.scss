@@ -1,0 +1,50 @@
+@import "_variables-mixins";
+
+#single-container {
+	@include wrapper(1250px, 12em, 12em);
+}
+
+.post-header {
+	text-align: center;
+	h1 {
+		font-family: 'SourceSansPro-Semibold';
+		margin: 1.7em 0;
+		letter-spacing: 0.1em;
+	}
+}
+.post-featured {
+	img {
+		width: 100%;
+	}
+}
+.post-main {
+	display: flex;
+	padding-top: 5em;
+	@media (max-width: 600px) {
+		flex-wrap: wrap;
+	}
+	.post-content {
+		width: 68%;
+		padding-right: 5%;
+		@media (max-width: 600px) {
+			width: 100%;
+			padding-right: 0;
+		}
+	}
+	.post-sidebar {
+		width: 32%;
+		background-color: #e1e1e1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1.5em;
+		@media (max-width: 600px) {
+			width: 100%;
+			margin-top: 3.7em;
+		}
+		span {
+			text-transform: uppercase;
+			font-size: 2em;
+		}
+	}
+}
